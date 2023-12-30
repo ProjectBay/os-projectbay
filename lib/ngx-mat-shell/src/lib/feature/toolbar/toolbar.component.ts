@@ -56,6 +56,7 @@ export class NgxMatShellToolbarComponent {
       toolbarRef = this.customToolbarComponentRefTemplates.get(0);
     }
     if (toolbarRef === undefined) return undefined;
+
     return this.customToolbarTemplates.get(
       this.customToolbarComponentRefTemplates.toArray().indexOf(toolbarRef)
     );
