@@ -20,7 +20,7 @@ export const resolveRouteTitle = (
       }
       return {
         ...route,
-        sidenavTitle: title,
+        title: title,
       };
     } else {
       let title;
@@ -33,7 +33,7 @@ export const resolveRouteTitle = (
       }
       return {
         ...route,
-        sidenavTitle: title,
+        title: title,
       };
     }
   } else {

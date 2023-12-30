@@ -3,6 +3,7 @@ import { FeedComponent } from './views/feed.component';
 import { LandingComponent } from './views/landing.component';
 import { PrivacyComponent } from './views/privacy.component';
 import { SettingsComponent } from './views/settings.component';
+import { TranslationService } from './translation.service';
 
 export enum ToolbarIds {
   DEFAULT = 'default',
@@ -36,7 +37,9 @@ export const ShellConfig: NgxMatShellConfig = {
       component: LandingComponent,
       data: {
         sidenavConfig: {
-          title: 'Home',
+          titleFactory: (service: TranslationService) =>
+            service.getTranslation('key'),
+          titleDeps: [TranslationService],
           icon: 'home',
           iconPosition: 'left',
           titleAria: 'Home page',
