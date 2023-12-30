@@ -4,15 +4,12 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8.12.1
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
       - name: Install deps
-        run: pnpm install --frozen-lockfile
+        run: npm ci
       - name: Lint
         run: npx nx run-many -t lint
       - name: Test
