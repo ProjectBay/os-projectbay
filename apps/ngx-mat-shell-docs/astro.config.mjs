@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://projectbay.github.io',
-	base: '/ngx-mat-shell',
+	base: '/os-projectbay',
 	integrations: [
 		starlight({
 			title: 'ngx-mat-shell',
