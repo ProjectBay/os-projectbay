@@ -24,8 +24,11 @@ import {
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { NGX_MAT_SHELL_CONFIG } from '../../data-access/config.injectiontokens';
 import { DependencyManagerService } from '../../data-access/dependency-manager.service';
+import { NgxMatShellGroupDividerDirective } from '../../data-access/directives/group-divider.directive';
+import { NgxMatShellGroupListItemIconDirective } from '../../data-access/directives/group-list-item-icon.directive';
+import { NgxMatShellGroupListItemTextFieldDirective } from '../../data-access/directives/group-list-item-text-field.directive';
+import { NgxMatShellGroupListItemDirective } from '../../data-access/directives/group-list-item.directive';
 import { NgxMatShellSidenavService } from '../../data-access/ngx-mat-sidenav.service';
 import {
   NgxMatShellConfig,
@@ -33,10 +36,6 @@ import {
 } from '../../data-access/shell.model';
 import { mapSidenavGroupResolver } from '../../utils/routeGroupsResolver';
 import { asStringObservable } from '../../utils/stringResolver';
-import { NgxMatShellGroupListItemTextFieldDirective } from '../../data-access/directives/group-list-item-text-field.directive';
-import { NgxMatShellGroupListItemIconDirective } from '../../data-access/directives/group-list-item-icon.directive';
-import { NgxMatShellGroupListItemDirective } from '../../data-access/directives/group-list-item.directive';
-import { NgxMatShellGroupDividerDirective } from '../../data-access/directives/group-divider.directive';
 
 @Component({
   selector: 'ngx-mat-shell-sidenav-content',

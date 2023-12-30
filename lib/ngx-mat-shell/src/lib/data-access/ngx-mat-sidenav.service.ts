@@ -1,9 +1,8 @@
 import { Injectable, inject } from '@angular/core';
 import { BehaviorSubject, map, share } from 'rxjs';
-import { NGX_MAT_SHELL_CONFIG } from './config.injectiontokens';
 import { NgxMatShellViewService } from './ngx-mat-shell-view.service';
-import { NgxMatShellSidenavState } from './shell.model';
 import { NgxMatShellService } from './ngx-mat-shell.service';
+import { NgxMatShellSidenavState } from './shell.model';
 
 @Injectable()
 export class NgxMatShellSidenavService {
