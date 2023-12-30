@@ -2,7 +2,7 @@
   "name": "ngx-mat-shell",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "lib/ngx-mat-shell/src",
-  "prefix": "os-projectbay",
+  "prefix": "@projectbay",
   "tags": [],
   "projectType": "library",
   "targets": {
