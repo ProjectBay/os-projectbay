@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/ProjectBay/os-projectbay/compare/v1.2.0...v1.3.0) (2023-12-30)
+
+
+### Features
+
+* ngx-mat-shell alpha ([298c115](https://github.com/ProjectBay/os-projectbay/commit/298c1153e3aeb4c82d1efa211f1ebd21830822b2))
+
 ## [1.2.0](https://github.com/ProjectBay/os-projectbay/compare/v1.1.0...v1.2.0) (2023-12-30)
 
 
