@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/ProjectBay/os-projectbay/compare/v1.3.0...v1.4.0) (2023-12-30)
+
+
+### Features
+
+* ngx-mat-shell: updated peer dependencies ([7da007d](https://github.com/ProjectBay/os-projectbay/commit/7da007d5a0c0a5c5a1b02e01ccbb20b6348a8fc0))
+
 ## [1.3.0](https://github.com/ProjectBay/os-projectbay/compare/v1.2.0...v1.3.0) (2023-12-30)
 
 
