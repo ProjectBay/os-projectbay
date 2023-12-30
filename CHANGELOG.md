@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/ProjectBay/os-projectbay/compare/v1.0.0...v1.1.0) (2023-12-30)
+
+
+### Features
+
+* rerelease ([ec03175](https://github.com/ProjectBay/os-projectbay/commit/ec03175dde8dc92df0561382e5fe0c7839b8f78d))
+
 ## 1.0.0 (2023-12-30)
 
 
