@@ -4,6 +4,9 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.12.1
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
