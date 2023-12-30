@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/ProjectBay/os-projectbay/compare/v1.5.0...v1.5.1) (2023-12-30)
+
+
+### Bug Fixes
+
+* ngx-mat-shell: fixed async sidenavtitle ([b186613](https://github.com/ProjectBay/os-projectbay/commit/b186613b30eda4dd3de7d29393818bb076170f34))
+* ngx-mat-shell: fixed async sidenavtitle ([e3007d3](https://github.com/ProjectBay/os-projectbay/commit/e3007d3ee79b842de69e6f191fd80bff5555513d))
+
 ## [1.5.0](https://github.com/ProjectBay/os-projectbay/compare/v1.4.0...v1.5.0) (2023-12-30)
 
 
