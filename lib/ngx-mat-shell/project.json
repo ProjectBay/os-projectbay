@@ -46,6 +46,12 @@
           "lib/ngx-mat-shell/package.json"
         ]
       }
+    },
+    "release": {
+      "executor": "nx-release:build-update-publish",
+      "options": {
+        "libName": "ngx-mat-shell"
+      }
     }
   }
 }

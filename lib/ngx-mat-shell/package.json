@@ -15,5 +15,8 @@
     "./theming": {
       "sass": "./src/_index.scss"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
