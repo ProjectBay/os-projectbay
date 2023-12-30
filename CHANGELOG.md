@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/ProjectBay/os-projectbay/compare/v1.4.0...v1.5.0) (2023-12-30)
+
+
+### Features
+
+* ngx-mat-shell: updated theme export ([decd76b](https://github.com/ProjectBay/os-projectbay/commit/decd76baa05316f79a7e6697ed27f8caa489153d))
+
 ## [1.4.0](https://github.com/ProjectBay/os-projectbay/compare/v1.3.0...v1.4.0) (2023-12-30)
 
 
