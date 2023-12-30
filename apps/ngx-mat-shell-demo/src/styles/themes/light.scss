@@ -1,0 +1,51 @@
+@use '@angular/material' as material;
+@use './light-palette.scss' as light-palette;
+@use '../common.scss' as common;
+@use 'sass:map';
+
+$demo-primary: material.define-palette(
+  light-palette.$demo-primary-palette,
+  500,
+  100,
+  900
+);
+$demo-accent: material.define-palette(
+  light-palette.$demo-accent-palette,
+  600,
+  100,
+  900
+);
+$demo-error: material.define-palette(
+  light-palette.$demo-error-palette,
+  500,
+  300,
+  800
+);
+
+// Extra colors
+$demo-success-for-light: material.define-palette(material.$green-palette);
+$demo-info-for-light: material.define-palette(material.$blue-palette);
+$demo-warn-for-light: material.define-palette(material.$red-palette);
+
+$demo-extra-color-scheme: (
+  success: $demo-success-for-light,
+  info: $demo-info-for-light,
+  warn: $demo-warn-for-light,
+  error: $demo-error,
+);
+
+$demo-theme: material.define-light-theme(
+  (
+    color: (
+      primary: $demo-primary,
+      accent: $demo-accent,
+    ),
+    typography: common.$demo-typography,
+    density: default,
+  )
+);
+
+$demo-theme: common.apply-extra-colors($demo-theme, $demo-extra-color-scheme);
+
+// Generate theme
+@include common.create-theme($demo-theme);

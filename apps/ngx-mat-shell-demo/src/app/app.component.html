@@ -1,1 +1,21 @@
-<os-projectbay-nx-welcome></os-projectbay-nx-welcome>
+<ngx-mat-shell>
+  <ng-template
+    ngxMatShellToolbar
+    toolbarKind="default"
+    let-toolbarConfig="toolbarConfig"
+  >
+    <ngx-mat-shell-demo-toolbar
+      [title]="'Default'"
+    ></ngx-mat-shell-demo-toolbar>
+  </ng-template>
+
+  <ng-template
+    ngxMatShellToolbar
+    toolbarKind="special"
+    let-toolbarConfig="toolbarConfig"
+  >
+    <ngx-mat-shell-demo-toolbar
+      [title]="'Special'"
+    ></ngx-mat-shell-demo-toolbar>
+  </ng-template>
+</ngx-mat-shell>

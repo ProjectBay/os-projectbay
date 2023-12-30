@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@projectbay/ngx-mat-shell": ["lib/ngx-mat-shell/src/index.ts"],
+      "@projectbay/ngx-mat-shell/scss/*": ["lib/ngx-mat-shell/src/_index.scss"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

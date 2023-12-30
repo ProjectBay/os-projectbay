@@ -1,0 +1,25 @@
+@use '@angular/material' as material;
+
+@mixin app-root-theme($theme) {
+  $theme-colors: material.get-color-config($theme);
+  $density-scale: material.get-density-config($theme);
+  $backgrounds: map-get($theme-colors, background);
+
+  ngx-mat-shell-demo-root {
+    .content {
+      background-color: material.get-color-from-palette(
+        $backgrounds,
+        background
+      );
+      min-height: calc(100vh - #{get-content-offset($density-scale)});
+    }
+  }
+}
+
+@function get-content-offset($density: default) {
+  $offset: 64px;
+  @if $density == minimum {
+    $offset: 44px;
+  }
+  @return $offset;
+}

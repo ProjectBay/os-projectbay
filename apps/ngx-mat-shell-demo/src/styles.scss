@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as material;
+@use './styles/common.scss' as common;
+@use './styles/themes/light.scss' as light-theme;
+@use 'sass:map';
+
+@include material.core();
+
+@include material.all-component-themes(light-theme.$demo-theme);
+@include material.typography-hierarchy(common.$demo-typography);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+$theme-colors: material.get-color-config(light-theme.$demo-theme);
+$primary-palette: map-get($theme-colors, primary);
+$accent-palette: map-get($theme-colors, accent);
+
+.theme {
+  --primary-color: #{material.get-color-from-palette($primary-palette)};
+  --accent-color: #{material.get-color-from-palette($accent-palette)};
+  --accent-lighter-color: #{material.get-color-from-palette(
+      $accent-palette,
+      lighter
+    )};
+}

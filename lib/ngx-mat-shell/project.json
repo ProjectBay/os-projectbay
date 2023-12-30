@@ -1,0 +1,51 @@
+{
+  "name": "ngx-mat-shell",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "lib/ngx-mat-shell/src",
+  "prefix": "os-projectbay",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "lib/ngx-mat-shell/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "lib/ngx-mat-shell/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "lib/ngx-mat-shell/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "lib/ngx-mat-shell/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "lib/ngx-mat-shell/**/*.ts",
+          "lib/ngx-mat-shell/**/*.html",
+          "lib/ngx-mat-shell/package.json"
+        ]
+      }
+    }
+  }
+}

@@ -8,18 +8,25 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/ngx-mat-shell-demo",
         "index": "apps/ngx-mat-shell-demo/src/index.html",
         "main": "apps/ngx-mat-shell-demo/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/ngx-mat-shell-demo/tsconfig.app.json",
         "assets": [
           "apps/ngx-mat-shell-demo/src/favicon.ico",
           "apps/ngx-mat-shell-demo/src/assets"
         ],
-        "styles": ["apps/ngx-mat-shell-demo/src/styles.scss"],
+        "styles": [
+          "@angular/material/prebuilt-themes/deeppurple-amber.css",
+          "apps/ngx-mat-shell-demo/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -69,7 +76,9 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "apps/ngx-mat-shell-demo/**/*.ts",
@@ -79,7 +88,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/ngx-mat-shell-demo/jest.config.ts",
         "passWithNoTests": true

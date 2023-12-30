@@ -1,0 +1,35 @@
+@use '@angular/material' as material;
+@use '../app/app.component.scss-theme.scss' as root;
+@use 'sass:map';
+
+@use 'lib/ngx-mat-shell/src/_index.scss' as ngx-mat-shell;
+
+$demo-typography: material.define-typography-config(
+  $font-family: "'Roboto', sans-serif",
+);
+
+@function apply-extra-colors($theme, $extra-color-scheme) {
+  @return map.deep-merge(
+    $theme,
+    (
+      color: $extra-color-scheme,
+    )
+  );
+}
+
+@mixin create-theme($demo-theme) {
+  // Theme Material Default
+  @include material.core-theme($demo-theme);
+  @include material.toolbar-theme($demo-theme);
+  @include material.button-theme($demo-theme);
+  @include material.tabs-theme($demo-theme);
+
+  // Theme Utils - InApp
+  @include root.app-root-theme($demo-theme);
+
+  @include ngx-mat-shell.ngx-shell-theme($demo-theme);
+
+  body {
+    @include material.strong-focus-indicators-theme($demo-theme);
+  }
+}
