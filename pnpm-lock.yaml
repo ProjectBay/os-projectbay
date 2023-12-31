@@ -100,21 +100,6 @@ devDependencies:
   '@schematics/angular':
     specifier: ~16.2.0
     version: 16.2.4
-  '@semantic-release/changelog':
-    specifier: ^6.0.3
-    version: 6.0.3(semantic-release@22.0.12)
-  '@semantic-release/commit-analyzer':
-    specifier: ^11.1.0
-    version: 11.1.0(semantic-release@22.0.12)
-  '@semantic-release/exec':
-    specifier: ^6.0.3
-    version: 6.0.3(semantic-release@22.0.12)
-  '@semantic-release/git':
-    specifier: ^10.0.1
-    version: 10.0.1(semantic-release@22.0.12)
-  '@semantic-release/release-notes-generator':
-    specifier: ^12.1.0
-    version: 12.1.0(semantic-release@22.0.12)
   '@types/jest':
     specifier: ^29.4.0
     version: 29.5.5
@@ -127,9 +112,6 @@ devDependencies:
   '@typescript-eslint/parser':
     specifier: ^5.60.1
     version: 5.62.0(eslint@8.46.0)(typescript@5.1.6)
-  conventional-changelog-conventionalcommits:
-    specifier: ^7.0.2
-    version: 7.0.2
   cypress:
     specifier: ^13.0.0
     version: 13.3.0
@@ -160,9 +142,6 @@ devDependencies:
   nx:
     specifier: 16.9.1
     version: 16.9.1
-  nx-release:
-    specifier: ^3.1.6
-    version: 3.1.6(nx@16.9.1)(tslib@2.6.2)
   postcss:
     specifier: ^8.4.5
     version: 8.4.31
@@ -178,9 +157,6 @@ devDependencies:
   prettier:
     specifier: ^2.6.2
     version: 2.8.8
-  replace-json-property:
-    specifier: ^1.9.0
-    version: 1.9.0
   semantic-release:
     specifier: ^22.0.12
     version: 22.0.12(typescript@5.1.6)
@@ -4434,14 +4410,6 @@ packages:
       - typescript
       - verdaccio
 
-  /@nrwl/devkit@16.5.0(nx@16.9.1):
-    resolution: {integrity: sha512-O/CH43gM2sumfO1BX7f20B4rniE9P48XwMEQoi1HssdzL+IstHWw5Q9BO2uoSCNpu5x04V/VzX/8yFmoFmOJ7g==}
-    dependencies:
-      '@nx/devkit': 16.5.0(nx@16.9.1)
-    transitivePeerDependencies:
-      - nx
-    dev: true
-
   /@nrwl/devkit@16.9.1(nx@16.9.1):
     resolution: {integrity: sha512-+iR7tg+LOrGWAGmGv0hr45hYUOeKjK/Jm6WV3Ldmx6I7LaaYM5Fu6Ev2KXL669QMzLJpg3kqgKQsneWbFT3MAw==}
     dependencies:
@@ -4691,20 +4659,6 @@ packages:
       - supports-color
       - typescript
       - verdaccio
-
-  /@nx/devkit@16.5.0(nx@16.9.1):
-    resolution: {integrity: sha512-IfGGKwgOBZshgRtL0V0IOuTaW8mnuSFft708fQfRyw8ArpNeyJbdbIvd9lCsHAFaKE5VTIKug4C48tyQikM7eA==}
-    peerDependencies:
-      nx: '>= 15 <= 17'
-    dependencies:
-      '@nrwl/devkit': 16.5.0(nx@16.9.1)
-      ejs: 3.1.9
-      ignore: 5.2.4
-      nx: 16.9.1
-      semver: 7.5.3
-      tmp: 0.2.1
-      tslib: 2.6.2
-    dev: true
 
   /@nx/devkit@16.9.1(nx@16.9.1):
     resolution: {integrity: sha512-jQMLX8pUKsOIk0tLFzJms5awPxKfJEi0uxY7+IUfRNHcnDkOFiv6gf1QqJ3pobmgwBdbC6Nv/dhDP3JT2wA1gA==}
@@ -5242,19 +5196,6 @@ packages:
     transitivePeerDependencies:
       - chokidar
 
-  /@semantic-release/changelog@6.0.3(semantic-release@22.0.12):
-    resolution: {integrity: sha512-dZuR5qByyfe3Y03TpmCvAxCyTnp7r5XwtHRf/8vD9EAn4ZWbavUX8adMtXYzE86EVh0gyLA7lm5yW4IV30XUag==}
-    engines: {node: '>=14.17'}
-    peerDependencies:
-      semantic-release: '>=18.0.0'
-    dependencies:
-      '@semantic-release/error': 3.0.0
-      aggregate-error: 3.1.0
-      fs-extra: 11.1.1
-      lodash: 4.17.21
-      semantic-release: 22.0.12(typescript@5.1.6)
-    dev: true
-
   /@semantic-release/commit-analyzer@11.1.0(semantic-release@22.0.12):
     resolution: {integrity: sha512-cXNTbv3nXR2hlzHjAMgbuiQVtvWHTlwwISt60B+4NZv01y/QRY7p2HcJm8Eh2StzcTJoNnflvKjHH/cjFS7d5g==}
     engines: {node: ^18.17 || >=20.6.1}
@@ -5273,50 +5214,9 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/error@3.0.0:
-    resolution: {integrity: sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==}
-    engines: {node: '>=14.17'}
-    dev: true
-
   /@semantic-release/error@4.0.0:
     resolution: {integrity: sha512-mgdxrHTLOjOddRVYIYDo0fR3/v61GNN1YGkfbrjuIKg/uMgCd+Qzo3UAXJ+woLQQpos4pl5Esuw5A7AoNlzjUQ==}
     engines: {node: '>=18'}
-    dev: true
-
-  /@semantic-release/exec@6.0.3(semantic-release@22.0.12):
-    resolution: {integrity: sha512-bxAq8vLOw76aV89vxxICecEa8jfaWwYITw6X74zzlO0mc/Bgieqx9kBRz9z96pHectiTAtsCwsQcUyLYWnp3VQ==}
-    engines: {node: '>=14.17'}
-    peerDependencies:
-      semantic-release: '>=18.0.0'
-    dependencies:
-      '@semantic-release/error': 3.0.0
-      aggregate-error: 3.1.0
-      debug: 4.3.4(supports-color@8.1.1)
-      execa: 5.1.1
-      lodash: 4.17.21
-      parse-json: 5.2.0
-      semantic-release: 22.0.12(typescript@5.1.6)
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@semantic-release/git@10.0.1(semantic-release@22.0.12):
-    resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
-    engines: {node: '>=14.17'}
-    peerDependencies:
-      semantic-release: '>=18.0.0'
-    dependencies:
-      '@semantic-release/error': 3.0.0
-      aggregate-error: 3.1.0
-      debug: 4.3.4(supports-color@8.1.1)
-      dir-glob: 3.0.1
-      execa: 5.1.1
-      lodash: 4.17.21
-      micromatch: 4.0.5
-      p-reduce: 2.1.0
-      semantic-release: 22.0.12(typescript@5.1.6)
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@semantic-release/github@9.2.6(semantic-release@22.0.12):
@@ -7089,13 +6989,6 @@ packages:
 
   /conventional-changelog-angular@7.0.0:
     resolution: {integrity: sha512-ROjNchA9LgfNMTTFSIWPzebCwOGFdgkEq45EnvvrmSLvCtAw0HSmrCs7/ty+wAeYUZyNay0YMUNYFTRL72PkBQ==}
-    engines: {node: '>=16'}
-    dependencies:
-      compare-func: 2.0.0
-    dev: true
-
-  /conventional-changelog-conventionalcommits@7.0.2:
-    resolution: {integrity: sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==}
     engines: {node: '>=16'}
     dependencies:
       compare-func: 2.0.0
@@ -9289,27 +9182,6 @@ packages:
       through: 2.3.8
       wrap-ansi: 7.0.0
 
-  /inquirer@8.2.6:
-    resolution: {integrity: sha512-M1WuAmb7pn9zdFRtQYk26ZBoY043Sse0wVDdk4Bppr+JOXyQYybdtvK+l9wUibhtjdjvtoiNy8tk+EgsYIUqKg==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      ansi-escapes: 4.3.2
-      chalk: 4.1.2
-      cli-cursor: 3.1.0
-      cli-width: 3.0.0
-      external-editor: 3.1.0
-      figures: 3.2.0
-      lodash: 4.17.21
-      mute-stream: 0.0.8
-      ora: 5.4.1
-      run-async: 2.4.1
-      rxjs: 7.8.1
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      through: 2.3.8
-      wrap-ansi: 6.2.0
-    dev: true
-
   /internal-slot@1.0.5:
     resolution: {integrity: sha512-Y+R5hJrzs52QCG2laLn4udYVnxsfny9CpOhNhUvk/SSSVyF6T27FzRbF0sroPidSu3X8oEAkOn2K804mjpt6UQ==}
     engines: {node: '>= 0.4'}
@@ -10287,14 +10159,6 @@ packages:
   /jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
 
-  /jsonfile@5.0.0:
-    resolution: {integrity: sha512-NQRZ5CRo74MhMMC3/3r5g2k4fjodJ/wh8MxjFbCViWKFjxrnudWSY5vomh+23ZaXzAS7J3fBZIR2dV6WbmfM0w==}
-    dependencies:
-      universalify: 0.1.2
-    optionalDependencies:
-      graceful-fs: 4.2.11
-    dev: true
-
   /jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
     dependencies:
@@ -11239,21 +11103,6 @@ packages:
   /nwsapi@2.2.7:
     resolution: {integrity: sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ==}
 
-  /nx-release@3.1.6(nx@16.9.1)(tslib@2.6.2):
-    resolution: {integrity: sha512-TmQCB7CZiacIKBQZOaK2o9Q0Ee31LM7uX+6C9z32M/z+xBTK/shmizBOYr1+1m5F2ycNtGQVVfFBxyfZI1k4iQ==}
-    peerDependencies:
-      tslib: ^2.6.0
-    dependencies:
-      '@nx/devkit': 16.5.0(nx@16.9.1)
-      chalk: 4.1.2
-      inquirer: 8.2.6
-      ora: 5.4.1
-      process: 0.11.10
-      tslib: 2.6.2
-    transitivePeerDependencies:
-      - nx
-    dev: true
-
   /nx@16.9.1:
     resolution: {integrity: sha512-h6jp0fXzEsBO3pwCNS2JbfzJZRgE2DnIo7Sj1/1oBo82o44jNqsPo3nMTj95qhcveJ0qBiKIh+Xw/fghXiRiSQ==}
     hasBin: true
@@ -11512,11 +11361,6 @@ packages:
   /p-map@7.0.1:
     resolution: {integrity: sha512-2wnaR0XL/FDOj+TgpDuRb2KTjLnu3Fma6b1ZUwGY7LcqenMcvP/YFpjpbPKY6WVGsbuJZRuoUz8iPrt8ORnAFw==}
     engines: {node: '>=18'}
-    dev: true
-
-  /p-reduce@2.1.0:
-    resolution: {integrity: sha512-2USApvnsutq8uoxZBGbbWM0JIYLiEMJ9RlaN7fAzVNb9OZN0SHjjTTfIcb667XynS5Y1VhwDJVDa72TnPzAYWw==}
-    engines: {node: '>=8'}
     dev: true
 
   /p-reduce@3.0.0:
@@ -12753,15 +12597,6 @@ packages:
     hasBin: true
     dependencies:
       jsesc: 0.5.0
-
-  /replace-json-property@1.9.0:
-    resolution: {integrity: sha512-+X6pZXsXSUKT9OzpJQjeDgLp9d0Ck7fsLZcNLhVL29XkwmB5oBz5T3fovs23/P0rLpzbCXrzG9/mbnyDrau+pw==}
-    hasBin: true
-    dependencies:
-      chalk: 4.1.2
-      commander: 2.20.3
-      jsonfile: 5.0.0
-    dev: true
 
   /request-progress@3.0.0:
     resolution: {integrity: sha512-MnWzEHHaxHO2iWiQuHrUPBi/1WeBf5PkxQqNyNvLl9VAYSdXkP8tQ3pBSeCPD+yw0v0Aq1zosWLz0BdeXpWwZg==}
@@ -14070,11 +13905,6 @@ packages:
 
   /universal-user-agent@6.0.1:
     resolution: {integrity: sha512-yCzhz6FN2wU1NiiQRogkTQszlQSlpWaw8SvVegAc+bDxbzHgh1vX8uIe8OYyMH6DwH+sdTJsgMl36+mSMdRJIQ==}
-    dev: true
-
-  /universalify@0.1.2:
-    resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
-    engines: {node: '>= 4.0.0'}
     dev: true
 
   /universalify@0.2.0:
