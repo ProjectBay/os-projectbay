@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/ProjectBay/os-projectbay/compare/v1.5.1...v1.5.2) (2023-12-31)
+
+
+### Bug Fixes
+
+* ngx-mat-shell: updated readme ([bc3050a](https://github.com/ProjectBay/os-projectbay/commit/bc3050a0023ce06d49037c4512bb7f154cbaea77))
+
 ## [1.5.1](https://github.com/ProjectBay/os-projectbay/compare/v1.5.0...v1.5.1) (2023-12-30)
 
 
