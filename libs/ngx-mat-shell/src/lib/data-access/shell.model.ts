@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ProviderToken } from '@angular/core';
 import { Route } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -35,11 +36,11 @@ export interface NgxMatShelltoolbarConfig {
 
 export interface NgxMatShellSidenavConfig {
   title?: string | Observable<string>;
-  titleFactory?: (...deps: unknown[]) => string | Observable<string>;
-  titleDeps?: ProviderToken<unknown>[];
+  titleFactory?: (...deps: any[]) => string | Observable<string>;
+  titleDeps?: ProviderToken<any>[];
   titleAria?: string | Observable<string>;
-  titleAriaFactory?: (...deps: unknown[]) => string | Observable<string>;
-  titleAriaDeps?: ProviderToken<unknown>[];
+  titleAriaFactory?: (...deps: any[]) => string | Observable<string>;
+  titleAriaDeps?: ProviderToken<any>[];
   icon?: string | Observable<string>;
   iconPosition?: 'left' | 'right';
   visible?: boolean;
@@ -60,8 +61,8 @@ export interface NgxMatShellSidenavGroupConfig {
 export interface INgxMatShellSidenavGroup {
   identifier: string;
   title?: string | Observable<string>;
-  titleFactory?: (...deps: unknown[]) => string | Observable<string>;
-  titleDeps?: ProviderToken<unknown>[];
+  titleFactory?: (...deps: any[]) => string | Observable<string>;
+  titleDeps?: ProviderToken<any>[];
   type?: 'list' | 'accordion' | 'tab';
 }
 
