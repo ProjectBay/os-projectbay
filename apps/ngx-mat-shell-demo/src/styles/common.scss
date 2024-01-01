@@ -2,7 +2,7 @@
 @use '../app/app.component.scss-theme.scss' as root;
 @use 'sass:map';
 
-@use 'lib/ngx-mat-shell/src/_index.scss' as ngx-mat-shell;
+@use 'libs/ngx-mat-shell/src/_index.scss' as ngx-mat-shell;
 
 $demo-typography: material.define-typography-config(
   $font-family: "'Roboto', sans-serif",
