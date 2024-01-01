@@ -46,46 +46,6 @@
           "libs/ngx-mat-shell/package.json"
         ]
       }
-    },
-    "release": {
-      "executor": "nx-release:build-update-publish",
-      "options": {
-        "libName": "ngx-mat-shell"
-      }
-    },
-    "version": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "preset": "angular",
-        "postTargets": ["npm"],
-        "commitParserOptions": {
-          "headerPattern": "^([A-Z]{3,}-\\d{1,5}):? (chore|build|ci|docs|feat|fix|perf|refactor|test)(?:\\(([\\w-]+)\\))?\\S* (.+)$",
-          "headerCorrespondence": [
-            "ticketReference",
-            "type",
-            "scope",
-            "subject"
-          ]
-        },
-        "types": [
-          { "type": "feat", "section": "✨ Features" },
-          { "type": "fix", "section": "🐞 Bug Fixes" },
-          { "type": "chore", "section": "⚙️ Chores" },
-          { "type": "build", "section": "🛠️ Build System" },
-          { "type": "ci", "section": "🤖 Continuous Integration" },
-          { "type": "docs", "section": "📄 Documentation" },
-          { "type": "style", "section": "🎨 Styles" },
-          { "type": "refactor", "section": "🧹 Code Refactoring" },
-          { "type": "perf", "section": "⚡️ Performance Improvements" },
-          { "type": "test", "section": "✅ Tests" }
-        ]
-      }
-    },
-    "npm": {
-      "executor": "ngx-deploy-npm:deploy",
-      "options": {
-        "access": "public"
-      }
     }
   }
 }

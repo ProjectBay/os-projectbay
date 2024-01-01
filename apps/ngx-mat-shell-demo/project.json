@@ -99,12 +99,6 @@
       "options": {
         "buildTarget": "ngx-mat-shell-demo:build"
       }
-    },
-    "version": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "preset": "angular"
-      }
     }
   }
 }

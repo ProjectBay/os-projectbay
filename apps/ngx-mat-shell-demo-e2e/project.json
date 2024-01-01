@@ -26,12 +26,6 @@
       "options": {
         "lintFilePatterns": ["apps/ngx-mat-shell-demo-e2e/**/*.{js,ts}"]
       }
-    },
-    "version": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "preset": "angular"
-      }
     }
   },
   "tags": [],
