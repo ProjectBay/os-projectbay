@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.2.0...ngx-mat-shell-v1.3.0) (2024-01-01)
+
+
+### Features
+
+* **ngx-mat-shell:** test-pr ([407c56f](https://github.com/projectbay/os-projectbay/commit/407c56fdc1d44ca439e7bba217a1496599dfc7ab))
+
 # [1.2.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.1.0...ngx-mat-shell-v1.2.0) (2024-01-01)
 
 
