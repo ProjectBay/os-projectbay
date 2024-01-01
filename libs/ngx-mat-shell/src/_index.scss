@@ -1,0 +1,36 @@
+@use '@angular/material' as material;
+
+@mixin ngx-shell-theme($theme) {
+  $theme-colors: material.get-color-config($theme);
+  $typography: material.get-typography-config($theme);
+  $accent-palette: map-get($theme-colors, accent);
+
+  ngx-mat-shell-sidenav-content {
+    .mat-expansion-panel:not([class*='mat-elevation-z']) {
+      box-shadow: none;
+    }
+    .mat-expansion-panel-body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .mat-mdc-tab-header {
+      display: none;
+    }
+    button {
+      border: none;
+    }
+
+    .mat-mdc-tab-group,
+    .mat-mdc-tab-body-wrapper {
+      flex: 1 1 100%;
+    }
+
+    .mat-expansion-panel-body {
+      padding-bottom: 0;
+    }
+
+    --mat-expansion-header-expanded-state-height: var(
+      --mat-expansion-header-collapsed-state-height
+    );
+  }
+}

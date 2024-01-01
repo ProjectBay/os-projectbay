@@ -1,0 +1,48 @@
+<ng-container *ngIf="ngxMatShellService.config$ | async as shellConfig">
+  <header *ngIf="shellConfig.sidenavHug === 'content'">
+    <ng-container [ngTemplateOutlet]="toolbarTemplate"> </ng-container>
+  </header>
+
+  <mat-drawer-container
+    class="flex-1"
+    [hasBackdrop]="shellConfig.sidenavBackdrop"
+    (backdropClick)="this.ngxMatShellSidenavService.backdropClicked()"
+    autosize
+  >
+    <mat-drawer
+      [position]="shellConfig.sidenavPosition || 'start'"
+      [opened]="this.ngxMatShellSidenavService.sidenavOpened$ | async"
+      [mode]="shellConfig.sidenavMode || 'side'"
+    >
+      <ngx-mat-shell-sidenav-content
+        [shellConfig]="shellConfig"
+        [customDividerTemplate]="customDividerTemplate"
+        [customGroupListItemIconTemplate]="customGroupListItemIconTemplate"
+        [customListItemTitleTemplate]="customListItemTitleTemplate"
+        [customGroupListItemTemplate]="customGroupListItemTemplate"
+        [customGroupTabBackButtonTemplate]="customGroupTabBackButtonTemplate"
+      >
+        <ng-content></ng-content>
+      </ngx-mat-shell-sidenav-content>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="shell-content">
+        <header *ngIf="shellConfig.sidenavHug === 'full'">
+          <ng-container [ngTemplateOutlet]="toolbarTemplate"> </ng-container>
+        </header>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+        <footer></footer>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+  <ng-template #toolbarTemplate>
+    <ngx-mat-shell-toolbar
+      [customToolbarTemplates]="customToolbarTemplates"
+      [customToolbarComponentRefTemplates]="customToolbarComponentRefTemplates"
+      [injector]="injector"
+    ></ngx-mat-shell-toolbar>
+  </ng-template>
+</ng-container>

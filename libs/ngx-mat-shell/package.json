@@ -1,0 +1,22 @@
+{
+  "name": "@projectbay/ngx-mat-shell",
+  "version": "0.1.0",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "@angular/core": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "rxjs": "~7.8.0",
+    "@angular/router": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "@angular/material": "^15.0.0 || ^16.0.0 || ^17.0.0",
+    "@angular/forms": "^15.0.0 || ^16.0.0 || ^17.0.0"
+  },
+  "dependencies": {},
+  "sideEffects": false,
+  "exports": {
+    "./theme.scss": {
+      "default": "./src/_index.scss"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
