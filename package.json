@@ -6,6 +6,7 @@
     "commit": "cz",
     "lint": "npx nx lint",
     "format": "npx nx format:write",
+    "pretty-format-check": "./tools/pretty-format-check.sh",
     "prepare": "husky install"
   },
   "private": true,
