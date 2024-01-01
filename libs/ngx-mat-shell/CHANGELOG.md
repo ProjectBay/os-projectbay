@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.4.0...ngx-mat-shell-v1.5.0) (2024-01-01)
+
+
+### Features
+
+* **ngx-mat-shell:** changed registry ([a43fc33](https://github.com/projectbay/os-projectbay/commit/a43fc33e93f545b7dda2da89f43d982cf55cee41))
+
 # [1.4.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.3.0...ngx-mat-shell-v1.4.0) (2024-01-01)
 
 
