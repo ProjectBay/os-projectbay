@@ -20,7 +20,7 @@ jobs:
         node-version: [18.14.0]
         npm-version: [8]
         yarn-version: ['1.22.x']
-        pnpm-version: [18.12.1]
+        pnpm-version: [8.12.1]
     steps:
       - name: Checkout [Pull Request]
         uses: actions/checkout@v2
