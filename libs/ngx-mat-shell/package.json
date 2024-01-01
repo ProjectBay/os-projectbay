@@ -1,6 +1,6 @@
 {
   "name": "@projectbay/ngx-mat-shell",
-  "version": "0.1.1",
+  "version": "0.0.0-semantic-release",
   "peerDependencies": {
     "@angular/common": "^15.0.0 || ^16.0.0 || ^17.0.0",
     "@angular/core": "^15.0.0 || ^16.0.0 || ^17.0.0",
@@ -16,7 +16,13 @@
       "default": "./src/_index.scss"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/projectbay/os-projectbay.git",
+    "directory": "libs/ngx-mat-shell"
+  },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   }
 }

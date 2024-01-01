@@ -46,6 +46,14 @@
           "libs/ngx-mat-shell/package.json"
         ]
       }
+    },
+    "release": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npx semantic-release-plus --extends ./libs/ngx-mat-shell/release.config.js",
+        "parallel": false
+      }
     }
   }
 }
