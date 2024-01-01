@@ -24,7 +24,7 @@ jobs:
       - name: Installing
         run: pnpm install --frozen-lockfile
       - name: Set NPM token to publish
-        run: echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_TOKEN }}" > .npmrc
+        run: echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_TOKEN }}" > /home/runner/work/os-projectbay/os-projectbay/.npmrc
       - name: Version
         shell: bash
         run: npx nx run ngx-mat-shell:version
