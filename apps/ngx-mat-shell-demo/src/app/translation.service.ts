@@ -5,11 +5,11 @@ import { of } from 'rxjs';
   providedIn: 'root',
 })
 export class TranslationService {
-  instant(key: string) {
+  instant(_key: string) {
     return 'TranslationValue';
   }
 
-  getTranslation(key: string) {
+  getTranslation(_key: string) {
     return of('TranslationValue');
   }
 }

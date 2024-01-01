@@ -35,11 +35,11 @@ export interface NgxMatShelltoolbarConfig {
 
 export interface NgxMatShellSidenavConfig {
   title?: string | Observable<string>;
-  titleFactory?: (...deps: any[]) => string | Observable<string>;
-  titleDeps?: ProviderToken<any>[];
+  titleFactory?: (...deps: unknown[]) => string | Observable<string>;
+  titleDeps?: ProviderToken<unknown>[];
   titleAria?: string | Observable<string>;
-  titleAriaFactory?: (...deps: any[]) => string | Observable<string>;
-  titleAriaDeps?: ProviderToken<any>[];
+  titleAriaFactory?: (...deps: unknown[]) => string | Observable<string>;
+  titleAriaDeps?: ProviderToken<unknown>[];
   icon?: string | Observable<string>;
   iconPosition?: 'left' | 'right';
   visible?: boolean;
@@ -60,8 +60,8 @@ export interface NgxMatShellSidenavGroupConfig {
 export interface INgxMatShellSidenavGroup {
   identifier: string;
   title?: string | Observable<string>;
-  titleFactory?: (...deps: any[]) => string | Observable<string>;
-  titleDeps?: ProviderToken<any>[];
+  titleFactory?: (...deps: unknown[]) => string | Observable<string>;
+  titleDeps?: ProviderToken<unknown>[];
   type?: 'list' | 'accordion' | 'tab';
 }
 

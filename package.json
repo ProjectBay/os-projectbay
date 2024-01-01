@@ -2,7 +2,9 @@
   "name": "os-projectbay",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "private": true,
   "publishConfig": {
     "access": "public"
@@ -25,6 +27,18 @@
   "packageManager": "pnpm@8.12.1",
   "bugs": {
     "url": "https://github.com/projectbay/os-projectbay/issues"
+  },
+  "lint-staged": {
+    "**/*.{ts,js,json,md,html,css,scss}": [
+      "nx affected --target lint --uncommited --fix true",
+      "nx affected --target lint --uncommited",
+      "nx format:write --uncommited"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "@angular/animations": "~16.2.0",
@@ -52,6 +66,10 @@
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "~16.2.0",
     "@angular/language-service": "~16.2.0",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/config-nx-scopes": "^18.4.3",
+    "@commitlint/cz-commitlint": "^18.4.3",
     "@nx/cypress": "16.9.1",
     "@nx/eslint-plugin": "16.9.1",
     "@nx/jest": "16.9.1",
@@ -64,14 +82,17 @@
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "commitizen": "^4.3.0",
     "cypress": "^13.0.0",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.13.4",
+    "husky": "^8.0.0",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
     "jest-preset-angular": "~13.1.0",
     "jsonc-eslint-parser": "^2.1.0",
+    "lint-staged": "^15.2.0",
     "ng-packagr": "~16.2.0",
     "nx": "16.9.1",
     "postcss": "^8.4.5",
