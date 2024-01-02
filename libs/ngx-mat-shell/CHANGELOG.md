@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.7.0...ngx-mat-shell-v1.8.0) (2024-01-02)
+
+
+### Features
+
+* **ngx-mat-shell:** changed barrel ([65a4eaa](https://github.com/projectbay/os-projectbay/commit/65a4eaa580de407bfe80d5e9781047b6751b68bd))
+
 # [1.7.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.6.0...ngx-mat-shell-v1.7.0) (2024-01-02)
 
 
