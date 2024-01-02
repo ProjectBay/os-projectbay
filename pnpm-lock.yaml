@@ -112,21 +112,6 @@ devDependencies:
   '@schematics/angular':
     specifier: ~16.2.0
     version: 16.2.4
-  '@semantic-release/changelog':
-    specifier: ^6.0.3
-    version: 6.0.3(semantic-release@22.0.12)
-  '@semantic-release/commit-analyzer':
-    specifier: ^11.1.0
-    version: 11.1.0(semantic-release@22.0.12)
-  '@semantic-release/git':
-    specifier: ^10.0.1
-    version: 10.0.1(semantic-release@22.0.12)
-  '@semantic-release/npm':
-    specifier: ^11.0.2
-    version: 11.0.2(semantic-release@22.0.12)
-  '@semantic-release/release-notes-generator':
-    specifier: ^12.1.0
-    version: 12.1.0(semantic-release@22.0.12)
   '@types/jest':
     specifier: ^29.4.0
     version: 29.5.5
