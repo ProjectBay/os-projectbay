@@ -127,6 +127,9 @@ devDependencies:
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0(typescript@5.1.6)
+  conventional-changelog-eslint:
+    specifier: ^5.0.0
+    version: 5.0.0
   cypress:
     specifier: ^13.0.0
     version: 13.3.0
@@ -9842,6 +9845,14 @@ packages:
     engines: { node: '>=16' }
     dependencies:
       compare-func: 2.0.0
+    dev: true
+
+  /conventional-changelog-eslint@5.0.0:
+    resolution:
+      {
+        integrity: sha512-6JtLWqAQIeJLn/OzUlYmzd9fKeNSWmQVim9kql+v4GrZwLx807kAJl3IJVc3jTYfVKWLxhC3BGUxYiuVEcVjgA==,
+      }
+    engines: { node: '>=16' }
     dev: true
 
   /conventional-changelog-writer@5.0.1:
