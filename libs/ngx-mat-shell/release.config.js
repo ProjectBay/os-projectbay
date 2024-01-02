@@ -28,7 +28,12 @@ module.exports = {
         },
       },
     ],
-    '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        pkgRoot: `${srcRoot}/`,
+      },
+    ],
     [
       '@semantic-release/changelog',
       {
@@ -40,7 +45,7 @@ module.exports = {
       {
         assets: [`${srcRoot}/package.json`, `${srcRoot}/CHANGELOG.md`],
         message:
-          `release(version): Release ${libName} ` +
+          `chore(release): ${libName} ` +
           '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
