@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.6.0...ngx-mat-shell-v1.7.0) (2024-01-02)
+
+
+### Features
+
+* **ngx-mat-shell:** updated release config ([6fc12b8](https://github.com/projectbay/os-projectbay/commit/6fc12b832b766628d31a380acbbabc09160443ee))
+
 # [1.6.0](https://github.com/projectbay/os-projectbay/compare/ngx-mat-shell-v1.5.0...ngx-mat-shell-v1.6.0) (2024-01-01)
 
 
