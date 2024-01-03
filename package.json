@@ -39,9 +39,9 @@
   },
   "lint-staged": {
     "**/*.{ts,js,json,md,html,css,scss}": [
-      "npx nx affected --target lint --uncommited --fix true",
-      "npx nx affected --target lint --uncommited",
-      "npx nx format:write --uncommited"
+      "npx nx affected --target lint --uncommitted --fix true -- --base=$(git rev-parse --abbrev-ref HEAD)",
+      "npx nx affected --target lint --uncommitted -- --base=$(git rev-parse --abbrev-ref HEAD)",
+      "npx nx format:write --uncommitted"
     ]
   },
   "config": {

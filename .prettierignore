@@ -1,2 +1,5 @@
 .prettierignore
 .docusaurus/
+package.json
+pnpm-lock.yaml
+**/*.md
